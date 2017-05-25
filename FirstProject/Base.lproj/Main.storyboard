@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4I9-y6-zkN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Music-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirstProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -24,13 +24,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rihanna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVA-kZ-wkP">
-                                <rect key="frame" x="10" y="39" width="355" height="21"/>
+                                <rect key="frame" x="10" y="83" width="355" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Kuu-Yu-X5a">
-                                <rect key="frame" x="10" y="68" width="365" height="115"/>
+                                <rect key="frame" x="10" y="112" width="365" height="115"/>
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.12549019607843137" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Kuu-Yu-X5a" secondAttribute="height" multiplier="187:59" id="CO0-Mg-5D2"/>
@@ -86,14 +86,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rihanna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-V6-sBG">
-                                <rect key="frame" x="10" y="203" width="355" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J Balvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-V6-sBG">
+                                <rect key="frame" x="10" y="247" width="355" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-md-gLP">
-                                <rect key="frame" x="10" y="232" width="365" height="115"/>
+                                <rect key="frame" x="10" y="276" width="365" height="115"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.12549019610000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Mge-md-gLP" secondAttribute="height" multiplier="187:59" id="Npx-KP-RBi"/>
@@ -120,19 +120,18 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="0xj-Kc-f6I"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" red="0.033499545989999997" green="1" blue="0.7125382777" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ss-HO-So1">
                                                     <rect key="frame" x="10" y="68" width="102" height="17"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="FXp-iX-t5E" firstAttribute="leading" secondItem="OLR-Lp-K7m" secondAttribute="leading" id="0oM-Xs-9GH"/>
                                             <constraint firstAttribute="bottom" secondItem="FXp-iX-t5E" secondAttribute="bottom" id="3pD-yQ-5Wh"/>
@@ -166,14 +165,14 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rihanna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-Se-WeV">
-                                <rect key="frame" x="10" y="367" width="355" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eminem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zo-Se-WeV">
+                                <rect key="frame" x="10" y="411" width="355" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hCd-z8-9gx">
-                                <rect key="frame" x="10" y="396" width="365" height="115"/>
+                                <rect key="frame" x="10" y="440" width="365" height="115"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.12549019610000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hCd-z8-9gx" secondAttribute="height" multiplier="187:59" id="sF7-f3-UGG"/>
@@ -200,19 +199,18 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="Crc-3i-iS9"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
                                                     <color key="textColor" red="0.033499545989999997" green="1" blue="0.7125382777" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPT-m1-aPz">
                                                     <rect key="frame" x="10" y="68" width="102" height="17"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="PCX-lC-gdi" firstAttribute="top" secondItem="yZy-bb-BFT" secondAttribute="top" id="4nq-h0-EpL"/>
                                             <constraint firstAttribute="trailing" secondItem="j84-nd-nfw" secondAttribute="trailing" id="Ewb-Ev-PTa"/>
@@ -291,12 +289,32 @@
                             <constraint firstItem="hCd-z8-9gx" firstAttribute="width" secondItem="hCd-z8-9gx" secondAttribute="height" multiplier="187:59" id="zvW-3s-wAZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="My Music" id="V1H-uV-jFV"/>
                     <connections>
                         <outlet property="FirstColelctionView" destination="Kuu-Yu-X5a" id="wxF-Go-2m3"/>
                         <outlet property="SecondColectionView" destination="Mge-md-gLP" id="Ja9-t0-rfk"/>
+                        <outlet property="ThirdCollectionView" destination="hCd-z8-9gx" id="nmp-f6-abX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.20000000000005" y="104.7976011994003"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vUO-my-TE3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4I9-y6-zkN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="yCD-1E-8qA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FYp-ei-K4q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SJ2-EF-5z9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-100" y="104.7976011994003"/>
         </scene>

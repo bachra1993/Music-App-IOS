@@ -15,7 +15,7 @@ class Song {
     var albumName : String?
     var songTitle : String?
     var songImageURL : String?
-    
+    var previewURL: String?
     
   
   
