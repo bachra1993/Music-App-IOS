@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>sf-san-francisco-ui-display-regular-5925c1c48865c.otf</string>
+		<string>sf-san-francisco-ui-display-black-5925c1d37a545.otf</string>
+		<string>sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf</string>
+		<string>sf-san-francisco-ui-display-light-5925c1ef02cd4.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

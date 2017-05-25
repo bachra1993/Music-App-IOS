@@ -15,6 +15,12 @@
 		2842E7F31ED597570042B5C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2842E7F11ED597570042B5C3 /* LaunchScreen.storyboard */; };
 		2842E7FE1ED597570042B5C3 /* FirstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842E7FD1ED597570042B5C3 /* FirstProjectTests.swift */; };
 		2842E8091ED597570042B5C3 /* FirstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2842E8081ED597570042B5C3 /* FirstProjectUITests.swift */; };
+		287A967B1ED5ECD00092C9D8 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287A967A1ED5ECD00092C9D8 /* Song.swift */; };
+		287A96821ED5FA530092C9D8 /* sf-san-francisco-ui-display-light-5925c1ef02cd4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 287A967E1ED5F98F0092C9D8 /* sf-san-francisco-ui-display-light-5925c1ef02cd4.otf */; };
+		287A96831ED5FA530092C9D8 /* sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf in Resources */ = {isa = PBXBuildFile; fileRef = 287A967F1ED5F98F0092C9D8 /* sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf */; };
+		287A96841ED5FA530092C9D8 /* sf-san-francisco-ui-display-black-5925c1d37a545.otf in Resources */ = {isa = PBXBuildFile; fileRef = 287A96801ED5F98F0092C9D8 /* sf-san-francisco-ui-display-black-5925c1d37a545.otf */; };
+		287A96851ED5FA530092C9D8 /* sf-san-francisco-ui-display-regular-5925c1c48865c.otf in Resources */ = {isa = PBXBuildFile; fileRef = 287A96811ED5F98F0092C9D8 /* sf-san-francisco-ui-display-regular-5925c1c48865c.otf */; };
+		59A1552C0517418666E1FA39 /* Pods_FirstProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F9185C29AE8D94C5B729C5 /* Pods_FirstProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,14 @@
 		2842E8041ED597570042B5C3 /* FirstProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2842E8081ED597570042B5C3 /* FirstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstProjectUITests.swift; sourceTree = "<group>"; };
 		2842E80A1ED597570042B5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		287A967A1ED5ECD00092C9D8 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		287A967E1ED5F98F0092C9D8 /* sf-san-francisco-ui-display-light-5925c1ef02cd4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-san-francisco-ui-display-light-5925c1ef02cd4.otf"; path = "../../../../Downloads/sf-san-francisco-ui-display-light-5925c1ef02cd4.otf"; sourceTree = "<group>"; };
+		287A967F1ED5F98F0092C9D8 /* sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf"; path = "../../../../Downloads/sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf"; sourceTree = "<group>"; };
+		287A96801ED5F98F0092C9D8 /* sf-san-francisco-ui-display-black-5925c1d37a545.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-san-francisco-ui-display-black-5925c1d37a545.otf"; path = "../../../../Downloads/sf-san-francisco-ui-display-black-5925c1d37a545.otf"; sourceTree = "<group>"; };
+		287A96811ED5F98F0092C9D8 /* sf-san-francisco-ui-display-regular-5925c1c48865c.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "sf-san-francisco-ui-display-regular-5925c1c48865c.otf"; path = "../../../../Downloads/sf-san-francisco-ui-display-regular-5925c1c48865c.otf"; sourceTree = "<group>"; };
+		7662014F253A0958AE0EE3B4 /* Pods-FirstProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirstProject/Pods-FirstProject.debug.xcconfig"; sourceTree = "<group>"; };
+		85CEA0DEBA1298834C1EDDC9 /* Pods-FirstProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirstProject/Pods-FirstProject.release.xcconfig"; sourceTree = "<group>"; };
+		B1F9185C29AE8D94C5B729C5 /* Pods_FirstProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A1552C0517418666E1FA39 /* Pods_FirstProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				2842E7FC1ED597570042B5C3 /* FirstProjectTests */,
 				2842E8071ED597570042B5C3 /* FirstProjectUITests */,
 				2842E7E31ED597560042B5C3 /* Products */,
+				AAD1FC32CD7BC41F75C40B02 /* Pods */,
+				42CBD528AE6581ABD55EA535 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +116,11 @@
 		2842E7E41ED597560042B5C3 /* FirstProject */ = {
 			isa = PBXGroup;
 			children = (
-				2842E7E51ED597560042B5C3 /* AppDelegate.swift */,
+				287A967D1ED5F89C0092C9D8 /* Fonts */,
+				287A96771ED5ECA00092C9D8 /* Entity */,
+				2842E8161ED597DF0042B5C3 /* Ressources */,
 				2842E7E71ED597560042B5C3 /* ViewController.swift */,
 				2842E7E91ED597560042B5C3 /* Main.storyboard */,
-				2842E7EF1ED597570042B5C3 /* Assets.xcassets */,
-				2842E7F11ED597570042B5C3 /* LaunchScreen.storyboard */,
-				2842E7F41ED597570042B5C3 /* Info.plist */,
-				2842E7EC1ED597560042B5C3 /* FirstProject.xcdatamodeld */,
 			);
 			path = FirstProject;
 			sourceTree = "<group>";
@@ -128,6 +143,54 @@
 			path = FirstProjectUITests;
 			sourceTree = "<group>";
 		};
+		2842E8161ED597DF0042B5C3 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				2842E7E51ED597560042B5C3 /* AppDelegate.swift */,
+				2842E7F41ED597570042B5C3 /* Info.plist */,
+				2842E7EC1ED597560042B5C3 /* FirstProject.xcdatamodeld */,
+				2842E7F11ED597570042B5C3 /* LaunchScreen.storyboard */,
+				2842E7EF1ED597570042B5C3 /* Assets.xcassets */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		287A96771ED5ECA00092C9D8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				287A967A1ED5ECD00092C9D8 /* Song.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		287A967D1ED5F89C0092C9D8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				287A967E1ED5F98F0092C9D8 /* sf-san-francisco-ui-display-light-5925c1ef02cd4.otf */,
+				287A967F1ED5F98F0092C9D8 /* sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf */,
+				287A96801ED5F98F0092C9D8 /* sf-san-francisco-ui-display-black-5925c1d37a545.otf */,
+				287A96811ED5F98F0092C9D8 /* sf-san-francisco-ui-display-regular-5925c1c48865c.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		42CBD528AE6581ABD55EA535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F9185C29AE8D94C5B729C5 /* Pods_FirstProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAD1FC32CD7BC41F75C40B02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7662014F253A0958AE0EE3B4 /* Pods-FirstProject.debug.xcconfig */,
+				85CEA0DEBA1298834C1EDDC9 /* Pods-FirstProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2842E80D1ED597570042B5C3 /* Build configuration list for PBXNativeTarget "FirstProject" */;
 			buildPhases = (
+				C3213CE738B1622E02DD4A3A /* [CP] Check Pods Manifest.lock */,
 				2842E7DE1ED597560042B5C3 /* Sources */,
 				2842E7DF1ED597560042B5C3 /* Frameworks */,
 				2842E7E01ED597560042B5C3 /* Resources */,
+				0245C78DDFCDF02F7123A6ED /* [CP] Embed Pods Frameworks */,
+				0297ECA8FFA78C31602EA928 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287A96821ED5FA530092C9D8 /* sf-san-francisco-ui-display-light-5925c1ef02cd4.otf in Resources */,
+				287A96831ED5FA530092C9D8 /* sf-san-francisco-ui-text-regular-5925c1de2e9cc.otf in Resources */,
+				287A96841ED5FA530092C9D8 /* sf-san-francisco-ui-display-black-5925c1d37a545.otf in Resources */,
+				287A96851ED5FA530092C9D8 /* sf-san-francisco-ui-display-regular-5925c1c48865c.otf in Resources */,
 				2842E7F31ED597570042B5C3 /* LaunchScreen.storyboard in Resources */,
 				2842E7F01ED597570042B5C3 /* Assets.xcassets in Resources */,
 				2842E7EB1ED597560042B5C3 /* Main.storyboard in Resources */,
@@ -257,11 +327,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0245C78DDFCDF02F7123A6ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstProject/Pods-FirstProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0297ECA8FFA78C31602EA928 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirstProject/Pods-FirstProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3213CE738B1622E02DD4A3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2842E7DE1ED597560042B5C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287A967B1ED5ECD00092C9D8 /* Song.swift in Sources */,
 				2842E7E81ED597560042B5C3 /* ViewController.swift in Sources */,
 				2842E7EE1ED597560042B5C3 /* FirstProject.xcdatamodeld in Sources */,
 				2842E7E61ED597560042B5C3 /* AppDelegate.swift in Sources */,
@@ -414,6 +533,7 @@
 		};
 		2842E80E1ED597570042B5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7662014F253A0958AE0EE3B4 /* Pods-FirstProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstProject/Info.plist;
@@ -426,6 +546,7 @@
 		};
 		2842E80F1ED597570042B5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85CEA0DEBA1298834C1EDDC9 /* Pods-FirstProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FirstProject/Info.plist;
@@ -509,6 +630,7 @@
 				2842E80F1ED597570042B5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2842E8101ED597570042B5C3 /* Build configuration list for PBXNativeTarget "FirstProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +639,7 @@
 				2842E8121ED597570042B5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2842E8131ED597570042B5C3 /* Build configuration list for PBXNativeTarget "FirstProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +648,7 @@
 				2842E8151ED597570042B5C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
