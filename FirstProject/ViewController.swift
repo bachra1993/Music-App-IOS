@@ -20,7 +20,13 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
     
     @IBOutlet weak var ThirdCollectionView: UICollectionView!
     
+    @IBOutlet weak var btn_play_pause: UIButton!
     
+    @IBOutlet weak var song_progress: UIProgressView!
+    
+    @IBOutlet weak var label_progress: UILabel!
+    
+    @IBOutlet weak var label_song: UILabel!
     var searchUrlRihanna = "https://api.spotify.com/v1/search?q=Rihanna&type=track&limit=20"
     var searchUrlBalvin = "https://api.spotify.com/v1/search?q=J+balvin&type=track&limit=20"
     var searchUrlEminem = "https://api.spotify.com/v1/search?q=Eminem&type=track&limit=20"
@@ -36,6 +42,7 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         super.viewDidLoad()
         
         
+        
         FirstColelctionView.delegate = self
         FirstColelctionView.dataSource = self
         
@@ -48,6 +55,7 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         callAlamo(url: searchUrlRihanna, index : 1)
         callAlamo(url: searchUrlBalvin, index : 2)
         callAlamo(url: searchUrlEminem, index : 3)
+
         
     }
     
@@ -55,9 +63,7 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         super.didReceiveMemoryWarning()
     }
     
-    
-    
-    
+
     
     
     
@@ -95,21 +101,9 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
             let ImageAlbum:UIImageView = firstCell.viewWithTag(100) as! UIImageView
             
             
-            if songsRihanna[indexPath.row].previewURL == nil {
-                
-                var imageBTN: UIImage = UIImage(named: "btn_small")!
-                var i = UIImageView(image : imageBTN )
-                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
-                firstCell.contentView.addSubview(i)
-
-            }
-            
-
-            
-            
             //Song and Artist Name
             labelSongName.text = songsRihanna[indexPath.row].songTitle
-            labelAlbumName.text = songsRihanna[indexPath.row].previewURL
+            labelAlbumName.text = songsRihanna[indexPath.row].albumName
             
             
             //Image View
@@ -117,6 +111,29 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
             ImageAlbum.clipsToBounds = true
             let imageURL = URL(string: songsRihanna[indexPath.row].songImageURL!)
             ImageAlbum.kf.setImage(with: imageURL)
+            
+            
+            
+            
+            //Check if the song has stram link and give it green if yes red if no
+            if songsRihanna[indexPath.row].previewURL == nil {
+                
+                var imageBTN: UIImage = UIImage(named: "btn_small")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                firstCell.contentView.addSubview(i)
+                
+            }
+            else {
+                var imageBTN: UIImage = UIImage(named: "btn_green")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                firstCell.contentView.addSubview(i)
+                
+                
+            }
             
             
             return firstCell ;
@@ -146,6 +163,29 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
             ImageAlbum.clipsToBounds = true
             let imageURL = URL(string: songsBalvin[indexPath.row].songImageURL!)
             ImageAlbum.kf.setImage(with: imageURL)
+            
+            
+            
+            
+            //Check if the song has stram link and give it green if yes red if no
+            if songsBalvin[indexPath.row].previewURL == nil {
+                
+                var imageBTN: UIImage = UIImage(named: "btn_small")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                secondCell.contentView.addSubview(i)
+                
+            }
+            else {
+                var imageBTN: UIImage = UIImage(named: "btn_green")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                secondCell.contentView.addSubview(i)
+                
+                
+            }
             
             
             
@@ -181,6 +221,29 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
             
             
             
+            
+            //Check if the song has stram link and give it green if yes red if no
+            if songsEminem[indexPath.row].previewURL == nil {
+                
+                var imageBTN: UIImage = UIImage(named: "btn_small")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                thirdCell.contentView.addSubview(i)
+                
+            }
+            else {
+                var imageBTN: UIImage = UIImage(named: "btn_green")!
+                var i = UIImageView(image : imageBTN )
+                
+                i.frame = CGRect(x: 15 , y: 10, width: 30, height: 30)
+                thirdCell.contentView.addSubview(i)
+                
+                
+            }
+            
+            
+            
             return thirdCell;
             
             
@@ -201,8 +264,8 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         if collectionView == self.SecondColectionView {
             
             
+            label_song.text = songsBalvin[indexPath.row].songTitle
             
-       
             
             if let urlstring = songsBalvin[indexPath.row].previewURL {
                 
@@ -215,16 +278,8 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         }
         else if collectionView == self.FirstColelctionView {
             
-            
-            
-            print("test song")
-            print(songsRihanna[indexPath.row].songTitle)
+            label_song.text = songsRihanna[indexPath.row].songTitle
 
-            
-            print(songsRihanna[indexPath.row].albumName)
-
-            print(songsRihanna[indexPath.row].previewURL)
-            
             
             if let urlstring = songsRihanna[indexPath.row].previewURL {
                 
@@ -236,7 +291,17 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         }
             
         else {
-            print("other")
+
+            label_song.text = songsEminem[indexPath.row].songTitle
+            
+            
+            if let urlstring = songsEminem[indexPath.row].previewURL {
+                
+                let url = NSURL(string: urlstring)
+                print("the url = \(url!)")
+                downloadFileFromURL(url: url!)
+            }
+        
         }
     }
     
@@ -249,11 +314,14 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         downloadTask = URLSession.shared.downloadTask(with: url as URL, completionHandler: { (URL, response, error) -> Void in
             
             weakSelf!.play(url: (URL as? NSURL)!)
+
             
         })
         
         downloadTask.resume()
+        btn_play_pause.setImage(UIImage(named: "btn_pause"), for: UIControlState.normal)
         
+        scheduledTimerWithTimeInterval()
     }
     
     
@@ -264,9 +332,12 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
         
         do {
             self.player = try AVAudioPlayer(contentsOf: url as URL)
+           
+
             player.prepareToPlay()
             player.volume = 1.0
             player.play()
+          
         } catch let error as NSError {
             //self.player = nil
             print(error.localizedDescription)
@@ -351,6 +422,66 @@ class ViewController: UIViewController , UICollectionViewDelegate,UICollectionVi
     
     
     
+    //Progress view update every 1 second
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function **Countdown** with the interval of 1 seconds
+        Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.updateCounting), userInfo: nil, repeats: true)
+    }
+    
+    func updateCounting(){
+        
+        if player.isPlaying {
+            song_progress.progress = Float(player.currentTime) / 100
+            
+            
+            let current = stringFromTimeInterval(interval: player.currentTime) as String
+            let duration = stringFromTimeInterval(interval: player.duration) as String
+            
+            
+            
+            label_progress.text = "\(current)-\(duration)"
+            
+           
+        }
+        
+    }
+    
+
+    
+    
+    //player play / pause control
+    @IBAction func play_pause(_ sender: Any) {
+        
+        if player.isPlaying {
+            
+            btn_play_pause.setImage(UIImage(named: "btn_big"), for: UIControlState.normal)
+
+            player.pause()
+        }
+        else {
+            btn_play_pause.setImage(UIImage(named: "btn_pause"), for: UIControlState.normal)
+
+
+            player.play()
+        }
+        
+        
+    }
+    
+    
+    //From time intervale to Sting
+    func stringFromTimeInterval(interval: TimeInterval) -> NSString {
+        
+        let ti = NSInteger(interval)
+        
+        let ms = Int((interval.truncatingRemainder (dividingBy: 1)) * 1000)
+        
+        let seconds = ti % 60
+        let minutes = (ti / 60) % 60
+        let hours = (ti / 3600)
+        
+        return NSString(format: "%0.2d:%0.2d",minutes,seconds)
+    }
     
     
 }

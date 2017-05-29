@@ -149,18 +149,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <progressView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LRx-jy-NKf">
+                            <progressView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LRx-jy-NKf">
                                 <rect key="frame" x="98" y="601" width="252" height="2"/>
                                 <color key="tintColor" red="1" green="0.12279899163861929" blue="0.22324276909465823" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:32 - 04:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qS9-Ox-sl6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00 - 00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qS9-Ox-sl6">
                                 <rect key="frame" x="165" y="611" width="101.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-ij-RDj">
-                                <rect key="frame" x="170" y="573" width="90" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-ij-RDj">
+                                <rect key="frame" x="98" y="573" width="252" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -242,12 +242,15 @@
                                     <constraint firstAttribute="height" constant="62" id="joS-RU-Cei"/>
                                 </constraints>
                                 <state key="normal" image="btn_big"/>
+                                <connections>
+                                    <action selector="play_pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGc-vv-IaW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.12549019607843137" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="qS9-Ox-sl6" firstAttribute="leading" secondItem="kh7-hj-JXa" secondAttribute="trailing" constant="87" id="4iF-NA-u32"/>
-                            <constraint firstItem="UNH-ij-RDj" firstAttribute="leading" secondItem="kh7-hj-JXa" secondAttribute="trailing" constant="92" id="8ay-OJ-pux"/>
+                            <constraint firstItem="UNH-ij-RDj" firstAttribute="leading" secondItem="kh7-hj-JXa" secondAttribute="trailing" constant="20" id="8ay-OJ-pux"/>
                             <constraint firstItem="Mge-md-gLP" firstAttribute="width" secondItem="Mge-md-gLP" secondAttribute="height" multiplier="187:59" id="9CA-Ce-dmI"/>
                             <constraint firstItem="kh7-hj-JXa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Ta-ev-5Ry"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LRx-jy-NKf" secondAttribute="trailing" constant="9" id="Aro-eX-ZOL"/>
@@ -264,7 +267,7 @@
                             <constraint firstItem="8Zo-Se-WeV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="NY3-kv-P5M"/>
                             <constraint firstItem="TVA-kZ-wkP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="PVl-nf-E2K"/>
                             <constraint firstItem="kh7-hj-JXa" firstAttribute="trailing" secondItem="Phb-Fg-ERM" secondAttribute="trailing" id="SKW-H5-J05"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UNH-ij-RDj" secondAttribute="trailing" constant="99" id="U3t-Gj-OPL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UNH-ij-RDj" secondAttribute="trailing" constant="9" id="U3t-Gj-OPL"/>
                             <constraint firstItem="hCd-z8-9gx" firstAttribute="top" secondItem="8Zo-Se-WeV" secondAttribute="bottom" constant="8" id="Y5k-ed-JiS"/>
                             <constraint firstItem="LRx-jy-NKf" firstAttribute="top" secondItem="UNH-ij-RDj" secondAttribute="bottom" constant="8" id="ZHi-ax-jlq"/>
                             <constraint firstItem="8Zo-Se-WeV" firstAttribute="top" secondItem="Mge-md-gLP" secondAttribute="bottom" constant="20" id="ahB-vL-Vad"/>
@@ -294,6 +297,10 @@
                         <outlet property="FirstColelctionView" destination="Kuu-Yu-X5a" id="wxF-Go-2m3"/>
                         <outlet property="SecondColectionView" destination="Mge-md-gLP" id="Ja9-t0-rfk"/>
                         <outlet property="ThirdCollectionView" destination="hCd-z8-9gx" id="nmp-f6-abX"/>
+                        <outlet property="btn_play_pause" destination="kh7-hj-JXa" id="5Va-ZE-Y4m"/>
+                        <outlet property="label_progress" destination="qS9-Ox-sl6" id="wZo-Gb-N2u"/>
+                        <outlet property="label_song" destination="UNH-ij-RDj" id="CKm-u7-kFY"/>
+                        <outlet property="song_progress" destination="LRx-jy-NKf" id="Dd8-dK-l5m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
